@@ -1,0 +1,46 @@
+<h2 class="h2 mb-5 p-5 bg-success text-white" style="text-align: center;">Rick and Morty Characters</h2>
+
+<!-- <div class="container" style="">
+    <div class="row">
+        <div class="col-4">
+            <div class="card mb-3 text-white  bg-success">
+                <img [src]="character.image" alt="Character Image" class="card-img-top">
+                <div class="card-body  border-success">
+                    <h5 class="card-title">{{ character.name }}</h5>
+                </div>
+                <ul class="list-group list-group-flush text-white">
+                    <li class="list-group-item list-group-item-success ">Species: {{ character.species }}</li>
+                    <li class="list-group-item list-group-item-success">Gender: {{ character.gender }}</li>
+                    <li class="list-group-item list-group-item-success">Status: {{ character.status }}</li>
+                    <li class="list-group-item list-group-item-success">Location: {{ character.location["name"] }}</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="card mb-3 bg-success" >
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img [src]="character.image" alt="Character Image" >
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title text-white ">{{ character.name }}</h5>
+
+                <ul class="list-group list-group-flush text-white">
+                    <li class="list-group-item list-group-item-success ">Origin Name: {{ character.origin["name"] }}</li>
+                    <li class="list-group-item list-group-item-success ">Species: {{ character.species }}</li>
+                    <li class="list-group-item list-group-item-success">Gender: {{ character.gender }}</li>
+                    <li class="list-group-item list-group-item-success">Status: {{ character.status }}</li>
+                    <li class="list-group-item list-group-item-success">Location: {{ character.location["name"] }}</li>
+                </ul>
+                <div class="card-footer bg-secondary" style="text-align: center;">
+                <a routerLink="" class="btn btn-success mt-3"> Karakterelere Dön</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
